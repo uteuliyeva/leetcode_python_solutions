@@ -6,15 +6,12 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        stack=[]
-        for p in s:
-            if p=="(":
-                stack.append(0)
-            elif stack[-1]==0:
-                stack[-1]=1
+        result=power=0
+        for i in range(len(s)):
+            if s[i]=='(':
+                power+=1
             else:
-                temp=0
-                while stack[-1]!=0:
-                    temp+=stack.pop()
-                stack[-1]=2*temp
-        return sum(stack)
+                power-=1
+                if s[i-1]=='(':
+                    result+=2**power
+        return result
