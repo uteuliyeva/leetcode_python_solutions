@@ -1,3 +1,5 @@
+#Date: 032422
+#Difficulty: Easy
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -17,4 +19,3 @@ class Solution(object):
             if slow==fast:
                 return True
         return False
-        
