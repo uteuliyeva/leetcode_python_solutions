@@ -1,4 +1,4 @@
-#Date: 060123
+#Date: 010623
 #Difficulty: Medium
 class Solution(object):
     def maxIceCream(self, costs, coins):
