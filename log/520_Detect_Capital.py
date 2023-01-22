@@ -1,4 +1,4 @@
-#Date: 030123
+#Date: 010323
 #Difficulty: Easy
 class Solution(object):
     def detectCapitalUse(self, word):
